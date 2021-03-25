@@ -35,7 +35,7 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 
 ## Demo
 
-#### The following is an overview of the application in operation and rendering of the Workout Tracker app. 
+#### The following is an overview of the application in operation and rendering of the Budget Tracker app. 
     
 <img src="./public/placeholder.gif" alt="app video" width="900" height="auto"> <br>
 
@@ -74,10 +74,10 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 #### Start Application
 
 * You will see `App running on port 3000!` in the console. You can then view the app on http://localhost:3000/.
-
+<br>
 
 ### _Return to [Table of Contents](#Table-of-Contents)_
-
+<br>
   
 ## Usage 
 
@@ -97,7 +97,7 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
     <summary>Contact</summary>
     jendotb@gmail.com
 </details>
-<br>
+
 
 ## Project Status
 <details>
@@ -107,7 +107,7 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 <br>
 
 ### _Return to [Table of Contents](#Table-of-Contents)_
-
+<br>
     
 ## License
 #### Distributed under the MIT License. See `LICENSE` for more information.
