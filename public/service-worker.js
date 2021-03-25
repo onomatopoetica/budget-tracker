@@ -1,5 +1,5 @@
-const CACHE_NAME = "static-cache-v2";
-const DATA_CACHE_NAME = "data-cache-v1";
+const STATIC_CACHE = "static-cache-v1";
+const RUNTIME_CACHE = "runtime-cache";
 
 const FILES_TO_CACHE = [
     '/',
@@ -8,11 +8,9 @@ const FILES_TO_CACHE = [
     '/index.html',
     '/manifest.webmanifest',
     '/styles.css',
+    '/assets/turks.png',
     '/icons/icon-500x500.png'
 ];
-
-const STATIC_CACHE = "static-cache-v1";
-const RUNTIME_CACHE = "runtime-cache";
 
 self.addEventListener("install", event => {
     event.waitUntil(
@@ -78,7 +76,10 @@ self.addEventListener("fetch", event => {
             if (cachedResponse) {
                 return cachedResponse;
             }
-
+            else if (event.request.headers.get("accept").includes("text/html")) {
+                // return the cached home page for all requests for html pages
+                return caches.match("/");
+            }
             // request is not in cache. make network request and cache the response
             return caches.open(RUNTIME_CACHE).then(cache => {
                 return fetch(event.request).then(response => {

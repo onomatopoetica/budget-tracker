@@ -1,6 +1,12 @@
 body {
-  font-size: 120%;
+  font-size: 100%;
   font-family: Arial;
+  background-color: #000;
+}
+ 
+.vacation {
+  align-items: center;
+  max-width: 80%;
 }
 
 button, input {
@@ -13,13 +19,19 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid rgb(24, 24, 24);
   text-align: left;
   padding: 8px;
+  color: white;
+}
+
+th {
+  background-color: #6666ff;
+  color: white;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: none;
 }
 
 .error {
@@ -33,13 +45,15 @@ tr:nth-child(even) {
 }
 
 .total {
-  font-size: 150%;
-  text-decoration: underline;
+  font-size: 120%;
+  text-decoration: bold;
+  color: #FFF;
 }
 
-.form {
+.form:focus {
   margin-top: 25px;
   width: 100%;
+  outline-color: none !important;
 }
 
 .transactions {
