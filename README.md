@@ -37,9 +37,9 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 
 #### The following is an overview of the application in operation and rendering of the budget tracker app. 
     
-<img src="./public/placeholder.gif" alt="app video" width="900" height="auto"> <br>
+<img src="./public/assets/budgettracker.gif" alt="app video" width="900" height="auto"> <br>
 
-#### The following are screenshots of the application and overview of its functionality: <br>
+#### The following is a screenshot of the application and overview of its functionality: <br>
 
 <img src="./public/assets/budgettracker.png" alt="app screenshot" width="900" height="auto"> 
 
